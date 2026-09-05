@@ -56,6 +56,19 @@ The report wants a 30-day validation before software. In sprint mode run it alon
 
 14,700+ new subscription apps per month. Median monthly revenue one year after launch is $72. 69% of revenue goes to apps launched before 2020. Launch volume does not beat that curve; distribution and trust do. Every app in this sprint needs a channel at launch, not after.
 
+## Multi-country strategy (5 Sep 2026)
+
+The engine is built once for every market: stage roadmap, checklists, document vault, deadline calendar, budget snapshot, export, i18n, currency and date formats, per-jurisdiction deadline rules loaded from content files. The content is built per jurisdiction, never per language: pensions, tax, health insurance, name change and deadlines differ between countries that share a language (US vs UK, Spain vs Mexico, Germany vs Austria, Brazil vs Portugal). Each content pack needs local-language research, a local professional's review, a local privacy policy and terms, local pricing and payment methods, a localized store listing, support in the language, and maintenance when the law changes.
+
+Launch wide with demand tests, launch the product in waves:
+
+- Now: translated waitlist landing pages with a price test for every candidate country. They cost almost nothing and show which packs are worth building.
+- Wave 1 (launch): US, UK, Canada, Australia. One language, four content packs.
+- Wave 2: Japan. Own content pack, Japanese UI and support, MSCA payment setup, price about ¥4,980-9,800.
+- Wave 3: Germany, France, Spain on one GDPR and DSA build. Three content packs.
+- Wave 4: Brazil if the waitlist signal justifies it. Pix and boleto, LGPD, low price.
+- Same-language neighbours (Austria, Switzerland, Mexico, Argentina, Ireland, New Zealand, Portugal) only after the first pack in that language ships, each as its own smaller pack.
+
 ## Research status (5 Sep 2026)
 
 Two deep-research passes were run after this decision. Results:
