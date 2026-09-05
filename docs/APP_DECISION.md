@@ -56,10 +56,16 @@ The report wants a 30-day validation before software. In sprint mode run it alon
 
 14,700+ new subscription apps per month. Median monthly revenue one year after launch is $72. 69% of revenue goes to apps launched before 2020. Launch volume does not beat that curve; distribution and trust do. Every app in this sprint needs a channel at launch, not after.
 
-## Reports worth requesting next
+## Research status (5 Sep 2026)
 
-1. Gray-divorce competitor and keyword teardown: app-store listings, reviews and pricing for divorce checklist or organizer apps; search and ASO volume for post-decree terms (QDRO, beneficiary change, name change, divorce financial checklist).
-2. Content pack: the actual post-decree checklist, deadlines and documents by stage for the target jurisdiction (US first, note state variance). This becomes v1 content directly.
-3. Channel map: CDFA directories, family-law and women-50+ creators, employer EAP and relocation partners, and referral rules (no legal fee sharing).
+Two deep-research passes were run after this decision. Results:
+
+- `docs/research/english-market-planning-brief.md`: competitors and pricing, demand by country, the US deadline table, UK/Canada/Australia modules, channels and legal boundaries, monetization benchmarks, and the brainstorm question list.
+- `docs/research/non-english-market-pick.md`: ranking of 12 non-English markets. Pick: Japan first, Germany second, South Korea third.
+- `content/checklists/us-post-decree.json`: the US checklist as structured app content (4 stages, 45 tasks).
+
+Launch sequence: US, then UK/Canada/Australia on the same engine, then Japan (new language, content and payment stack), then Germany and the rest of the EU on one compliance build.
+
+Still open: keyword volumes for the post-decree terms, the women-50+ creator and Facebook-group map, employer EAP and relocation partners, and confirmation that the "Anchor" competitor exists as described.
 
 Assumptions: consumer-direct launch, no clinical or institutional partners yet, US market first, web-first before app stores.
