@@ -1,5 +1,7 @@
 # External deep-search prompts
 
+Status on 6 September 2026: P1, P2, P3, G1 (England and Wales), G9 and C1 are done and merged. Remaining: G2 to G8, C2 for each pack (UK first), K1.
+
 Run order follows the DeepSearch Agents Playbook: Perplexity discovers, Gemini does the broad per-country work, Claude audits. Replace `[DATE]` with today's date. When a run finishes, save the output as a Markdown file under `docs/research/inbox/` (or upload it to the Claude Code session) and it will be merged into the briefs and the checklist files.
 
 ## Where to run what

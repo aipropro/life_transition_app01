@@ -6,24 +6,28 @@
 
 ## What changed versus the original opportunity report
 
-- The "Anchor" app cited in the original report (USD 19.99/month, 129.99/year, AI companion, BIFF rewriting) could not be found as a standalone product in three searches. The closest match is the "Anchored" tier of Divorce SOS. Treat the Anchor pricing as unconfirmed.
+- The "Anchor" app in the original report exists: Anchor, Divorce and Co-Parent (App Store id 6757443865, meetanchor.app), $19.99 a month or $129.99 a year, with the "Kai" AI companion, a BIFF message coach, co-parenting tools and journaling. It had 3 ratings on 6 September 2026. The Divorce SOS "Anchored" tier at $19.99 is a separate product. Neither has post-decree admin features.
 - The only product that already ships post-decree admin features is a free lead-generation web portal run by a CDFA firm (Solutions Divorce Planning). No paid, self-serve, post-decree tracker exists in the US market.
 - Everything post-decree is currently sold as hourly professional time (CDFA $150-450/hour) or given away as free checklists. A $99-149 one-time price sits below a single CDFA hour.
-- One-time (lifetime) apps earn about half the revenue per install of yearly-plan apps in RevenueCat's 2026 data. A one-time model has to win on price point and conversion, which is exactly what a finite 90-day event allows.
+- One-time (lifetime) apps earn about half the revenue per install of yearly-plan apps in RevenueCat's 2026 data, and apps that sell lifetime access price it at 3 to 5 times the annual plan. The external audit (C1) concluded a pure one-time fee does not hold for a product whose deadlines run 18 months to 5 years. The pricing decision below changes to a one-time pass plus an optional low-cost renewal.
 
 ## 1. Competitors and pricing (2025-2026)
 
-| Product | What it is | Price | Ratings and complaints | Post-decree admin features |
+| Product | What it is | Price (date observed) | Ratings and complaints | Post-decree admin features |
 |---|---|---|---|---|
-| Hello Divorce | Online divorce filing platform with paid experts | DIY $400 one-time; Pro $1,500-2,000; Plus concierge $4,000; CDFA $300/hour; coaching $150/hour; QDRO preparation billed separately | Trustpilot 4.4 (100+ reviews), BBB A-; complaints: upselling, strict no-refund policy, auto-renewals, communication gaps | None. Product ends at filing |
-| Divorce SOS (UK) | Emotion-first subscription app by a divorce coach | 3-day trial, then £19.99/month; US "Anchored" tier $19.99 | Ratings not retrievable (store fetch blocked) | Light "money, legal, paperwork" organiser only; no QDRO tracker, beneficiary checklist, deadline calendar or meeting packet |
-| OurFamilyWizard | Co-parenting communication | $110 to $299.88 per parent per year, annual only | iOS 4.5 (about 47k ratings), Google Play 3.9, Trustpilot 2.5; 31.6% of negative reviews cite reliability, 25.1% cost; billing after cancellation | None; irrelevant to childless 50+ users |
-| Solutions Divorce Planning portal | Free web portal from a CDFA firm | Free (lead generation) | n/a | Post-Decree Action Checklist, Beneficiary Update Tracker, Account Separation Guide, Legal Document Organizer; no roadmap, calendar, vault, export, or app |
-| SplitSmart | Pre-decree discovery and agreement modules | $49-249 per module, $398 bundle | n/a | None post-decree |
-| The Divorce Planner | Course plus coaching | $127 course; coaching from $225/session; packages from $997 | n/a | Course content, not a tracker |
-| Divorce IQ | Guidance app | $59.99 lifetime or $7.99/month | n/a | Not post-decree |
-| CDFA services | Hourly financial analysis | $150-450/hour (most often $250-400); engagements $2,000-5,000; first consult usually free | n/a | The human version of our product |
-| Divorce coaches | Hourly | $100-250/hour; packages $500-5,000 | n/a | n/a |
+| Anchor, Divorce and Co-Parent | AI companion ("Kai"), BIFF message coach, co-parenting toolkit, journaling, therapist-built programs | $19.99/month or $129.99/year after a 3-day trial (6 Sep 2026) | App Store 5.0 with 3 ratings; too few to characterise | None |
+| Divorce SOS (UK) | Emotion-first subscription app by a divorce coach, built on Passion.io | £19.99/month; US in-app tiers: Anchored $19.99, Premium Annual $149, Tend to Your Needs $9.99 (6 Sep 2026) | Not enough ratings to display | Light "money, legal, paperwork" organiser only |
+| Hello Divorce | Online divorce filing platform with paid experts | Plans $50, $400, $2,000, $3,500 (6 Sep 2026; a July 2026 review site listed $400, $1,500-2,000, $4,000); legal coaching $350/hour, mediation $300/hour, CDFA $300/hour, QDRO preparation billed separately | Trustpilot 4.4 (100+); complaints: email-only support, no live person, upselling, no refunds, auto-renewals | Case file and filing tracker only; ends at filing |
+| DivorceIQ | Planning guide, checklist and timeline tracker, document organiser | Not published; developer's sibling apps are freemium | 4.8 with 5 ratings | Generic checklist and organiser, not post-decree |
+| SplitSmart | Discovery and disclosure platform sold to mediators and courts | Not published on the consumer site (B2B2C) | n/a | Court-ready reports, not a consumer packet |
+| SplitWell Divorces | Subscription app | $9.99/month after a 3-month trial | n/a | None found |
+| The Divorce Planner | Book and podcast, "8 weeks to get organized" | $25 paperback; coaching from $225/session | n/a | Pre-decree organiser |
+| Solutions Divorce Planning portal | CDFA firm's free web portal | Free portal; $150 consult; $1,500-3,500 analysis; $225/hour | n/a | Post-Decree Action Checklist, Beneficiary Update Tracker, Account Separation Guide, Legal Document Organizer; no app, roadmap, calendar, vault or export |
+| OurFamilyWizard, TalkingParents, AppClose, SupportPay | Co-parenting communication and expenses | $110 to $299.88 per parent per year (OFW); $7-39/month per parent (TalkingParents); $7.99-8.99/month (AppClose); $149.99/year per family (SupportPay) | OFW: iOS 4.5 (about 47k), Trustpilot 2.5; reliability and billing complaints | None; irrelevant to childless 50+ users |
+| Worthy | Jewellery resale, success fee 12-18% | n/a | n/a | Not a competitor |
+| CDFA services | Hourly financial analysis | $150-450/hour, typical engagement $2,000-5,000 | n/a | The human version of our product |
+
+Gap confirmed by the external check (P2): no product in the set uses a one-time purchase; no app tracks beneficiary changes; no consumer app tracks QDROs or pensions; no product exports a packet for the client's own adviser; none targets women 50+.
 
 Positioning that follows: "the organizer you bring to the CDFA or lawyer" (reduces billable hours) rather than a substitute for advice.
 
@@ -37,6 +41,17 @@ Positioning that follows: "the organizer you bring to the CDFA or lawyer" (reduc
 | UK (England and Wales) | 102,678 divorces in 2023; 8.6 per 1,000 married men, 8.5 per 1,000 married women | 2005-2015: divorces among men 65+ rose 23% and women 65+ rose 38% while total divorces fell 28% | ONS stopped publishing age at divorce in the bulletin after 2019; pull 50+ counts from the historical dataset or the FOI release |
 | Canada | About 42,000 divorces in 2023 (50-year low); average age at divorce 48 (2020) | 50+ rate rose 26% from 1991 to 2006 and has been flat since; roughly 1 in 4 divorces involves someone 50+ | No age-specific counts published after 2020 |
 | Australia | 49,158 divorces in 2025 (+4.1%); crude rate 2.2; median age 47.3 (men) / 44.4 (women) | Age-specific divorce rates rose for every female age group from 35-39 upward | 50-54, 55-59, 60+ female rates are in the ABS data cubes, not the headline release |
+
+### Women 50+ divorcing per year (wife's age at divorce)
+
+| Country | Women 50+ divorcing per year | Basis |
+|---|---|---|
+| US | about 171,000 | Audit estimate: about 900,000 divorces a year, 38% involving people 50+, half women |
+| UK | 33,550 (2021, all UK; 24,615 in the 2022 transition year) | ONS Table 3 plus Scotland and Northern Ireland (Gemini G9 run) |
+| Canada | 14,215 (2020) | Statistics Canada 39-10-0051-01 (G9) |
+| Australia | 13,150 (2022) | ABS 3310.0 data cube (G9) |
+
+About 232,000 women a year across the four English markets. The audit's US revenue sketch: 171,000 a year, a 2.5-year active period, 3.5% penetration, $149 each, about $2.2 million a year at steady state. Treat both as order-of-magnitude figures; the G9 counts were not independently verified in this session.
 
 ### Women's post-divorce finances
 
@@ -67,7 +82,7 @@ The US checklist lives in `content/checklists/us-post-decree.json`: 4 stages, 45
 | Filing status | Fixed by marital status on December 31; state law decides whether the decree is final | IRS Publication 504 |
 | Alimony | Instruments executed after 2018: not deductible, not taxable | IRS Publication 504 |
 | Property transfers | Non-taxable if incident to divorce: within 1 year of the marriage ending, or related to it within 6 years; recipient keeps the transferor's basis | IRS Publication 504 |
-| QDRO | Plan must have written QDRO procedures; decides qualified status in a reasonable period; amounts segregated up to 18 months, then paid to the participant if not qualified; IRAs transfer under IRC 408(d)(6), not by QDRO | DOL EBSA QDRO guide |
+| QDRO | Plan must have written QDRO procedures and decide qualified status within a reasonable period; 18 months is not a grace period. Amounts payable to the alternate payee are segregated for up to 18 months counted from the date the first payment would be due under the order, then paid to the participant if the order is still not qualified. IRAs transfer under IRC 408(d)(6), not by QDRO | 29 U.S.C. 1056(d)(3)(H); IRC 414(p)(7); DOL EBSA QDRO guide (audit C1) |
 | Beneficiaries | ERISA plans pay the beneficiary on file; a decree alone does not remove an ex (Egelhoff v. Egelhoff, 2001; Kennedy v. DuPont 2009; Sveen v. Melin 2018 for non-ERISA life insurance) | Supreme Court opinions |
 | Social Security | Divorced-spouse benefit: marriage 10+ years (marriage date to decree date), unmarried, 62+, ex entitled (or divorced 2+ years and ex 62+); up to 50% of ex's full benefit; survivor benefit from 60 (50 if disabled) | SSA family eligibility page, 20 CFR 404.331 |
 | Name change | SSA Form SS-5 with certified decree and ID, free, card in about 10-14 business days; then DMV, passport, payroll, banks | SSA publication 05-10513 |
@@ -91,8 +106,8 @@ The US checklist lives in `content/checklists/us-post-decree.json`: 4 stages, 45
 | Unauthorized practice of law | Texas Gov't Code 81.101(c): software, forms and checklists are not the practice of law if they clearly and conspicuously state they are not a substitute for an attorney's advice (does not cover preparing deeds, Chapter 83). North Carolina G.S. 84-2.2 requires State Bar registration and attorney-reviewed templates for interactive document generators. Upsolve v. James (2d Cir., Sept 2025): UPL rules can apply to individualized nonlawyer advice | Put the disclaimer in onboarding, on every checklist and calendar screen, and on the exported packet. Never generate court filings, QDRO orders or deeds. Support staff, coaches and any community stay on logistics and route legal questions to counsel |
 | Investment-advice boundary | Lowe v. SEC publisher's exclusion: general, impersonal, regularly published content is not investment advice; personalized recommendations, including software-driven ones, can trigger adviser registration | Explain how QDROs, rollovers and Social Security rules work; never say which account to keep, how to invest a rollover, or whether to take a lump sum |
 | State privacy and security law | About 20 states have comprehensive privacy laws (IAPP, June 2026); CCPA thresholds ($26.625M revenue, 100,000 consumers) put a small app below them. Massachusetts 201 CMR 17.00 (written security program plus encryption, no revenue floor) and New York SHIELD apply to any holder of a resident's name plus SSN or account number. All 50 states have breach-notification laws triggered by exactly the data a divorce vault holds | Encrypt at rest, write the security program, keep a breach playbook, and store as little server-side as possible from day one |
-| Creators and Facebook groups for women 50+ | Not surveyed in this pass (platform-side work) | Open item for the brainstorm |
-| Employer EAP and relocation partners | Not surveyed in this pass | Open item |
+| Creators and Facebook groups for women 50+ | Mapped in `docs/research/channels-english-markets.md`: three Facebook groups aimed exactly at divorced women over 50, two Substacks, two CDFA content creators, two podcasts (one Australian), two subreddits. Most member counts are hidden until you join | Approach the top ten with a pinned first-30-days checklist, not ads |
+| Employer EAP and relocation partners | Still not surveyed | Open item |
 
 ## 5. Monetization benchmarks
 
@@ -104,6 +119,10 @@ The US checklist lives in `content/checklists/us-post-decree.json`: 4 stages, 45
 | Trial conversion | 42.5% median for 17-32 day trials vs 25.5% for trials under 4 days | RevenueCat 2026 |
 | Realized LTV per payer after year one | $32 North America, $23 global | RevenueCat 2026 |
 | Google Play vs App Store billing losses | 31% of subscriptions lost to billing errors on Play vs 14% on App Store | RevenueCat 2026 |
+| Day-35 download-to-paid conversion | North America median 2.6%, top quartile above 5.6%, 90th percentile 10.4%; Western Europe 2.0% | RevenueCat 2025/2026 (audit C1) |
+| Lifetime purchases | Offered by 23.2% of subscription apps, priced at 3 to 5 times the annual plan (up to 11.5x) | RevenueCat (audit C1) |
+| Annual-plan churn | About 30% of annual subscriptions cancel in month one; 56-72% by year one | RevenueCat 2025 (audit C1) |
+| Adults 50+ owning a smartphone (2025 report) | 91%; 86% bank or manage money online | AARP 2025 Tech Trends (audit C1) |
 | Refund rate | 5.8% for hard-paywall apps vs 3.4% freemium; stores warn above 10% | RevenueCat 2025 |
 | Conversion by price tier | Higher-priced apps convert 9.8% median vs 4.3% for low-priced | RevenueCat 2025 |
 | Native IAP vs link-out web checkout | About 28% vs 18% initial conversion; full web flow 25-45% lower at equal price | RevenueCat external-purchase test, May 2025 |
@@ -116,7 +135,7 @@ The US checklist lives in `content/checklists/us-post-decree.json`: 4 stages, 45
 
 ## 6. Decisions the numbers push toward
 
-1. Price test $99 vs $149 one-time, with a $29-49 refundable founding-cohort deposit collected before the build finishes. Budget a 5-6% refund rate and offer a plain money-back window.
+1. Pricing: a one-time Reset Pass at $99 vs $149 covering the 90-day program plus 12 months of vault, calendar and reminders, then an optional renewal at about $39.99 a year (or $4.99 a month) for users whose deadlines run longer (QDRO up to 18 months, property transfers up to 6 years, Social Security at 62, Japan's 5-year pension window). Collect a $29-49 refundable founding-cohort deposit before the build finishes. Budget a 5-6% refund rate and offer a plain money-back window. The external audit's negative-margin case assumed $30 a year per user for bank-data aggregation, which this product does not include, so the one-time pass stays viable; the renewal exists because the job outlasts 90 days, which is the "life-admin vault" expansion the original report allowed. Do not build the audit's suggested "QDRO document preparation engine": generating court orders crosses the unauthorized-practice line (North Carolina 84-2.2, Texas 81.101, Upsolve v. James). Keep QDRO tracking in the core and sell professional sessions separately.
 2. Sell in-app through native IAP and on the web for creator and search traffic. Do not go web-only for a 50+ audience; the conversion gap is 10 points.
 3. Add an installment option or a lower tier. Two in five women 50+ cannot cover a $500 emergency.
 4. Keep a human path without giving advice: CDFA and attorney directory listings (flat fee or free), office-hours webinars, and the exportable packet.
@@ -130,7 +149,7 @@ The US checklist lives in `content/checklists/us-post-decree.json`: 4 stages, 45
 1. Which channel can reach a woman within 30 days of her decree: CDFAs (via the packet), family-law firms (listings), women-50+ creators, or search? The research found the professional channels; the creator and Facebook-group landscape was not surveyed.
 2. Will a no-advice checklist clear the "I need a human" bar that Hello Divorce found? Test with the concierge cohort before deciding on office hours or coach partnerships.
 3. Price anchoring: does $99-149 read as "below one CDFA hour" or "expensive app"? The AARP anxiety data argues for installments or a $49 entry tier.
-4. Does the "Anchor" competitor exist as described in the original report, or was it the Divorce SOS "Anchored" tier? Confirm before positioning against it.
+4. Renewal pricing: $39.99 a year, $4.99 a month, or none. Test with the founding cohort; the lifetime-to-annual norm of 3-5x implies a $149 pass pairs with a renewal of $30-50 a year.
 5. Keyword volumes for the post-decree terms (see section 2) to size the search channel and pick landing-page copy.
 6. Which states' automatic restraining orders bar beneficiary and insurance changes while a case is pending? Needed for the "pending" stage copy.
 7. Medicare rules for 65+ users (Part B special enrollment, Part A on the ex's record) were not read from a primary source in this pass.
@@ -139,9 +158,15 @@ The US checklist lives in `content/checklists/us-post-decree.json`: 4 stages, 45
 
 ## 8. Verification status
 
-The deep-research harness completed its search and fetch phases: 5 search angles, 15 fetched sources, 25 extracted claims for this brief. The automated adversarial verification step failed on the account usage limit and was not re-run, to save tokens. What was cross-checked by hand with independent searches in this session: the ONS, ABS and StatCan headline figures; IRS Publication 504 rules; the COBRA, Marketplace and Social Security rules; the UK pension sharing implementation timeline; the CPP credit split time limits; and the Australian 12-month limit and trustee-notice rule. Not independently checked: the NCFMR rate series (site blocked), the GAO figures (site blocked), the competitor price points, and the RevenueCat and AARP numbers. Re-check those against the originals before publishing anything externally.
+An external audit (Claude Research run C1, 6 September 2026) checked the material claims against primary sources. Supported: the NCFMR series (FP-24-12, FP-25-24), GAO-12-699, COBRA deadlines, the Social Security divorced-spouse rules, the Destatis, INE and ISTAT 2024 figures, the Japan 2026 changes, the Korean split-pension statistics, StatCounter, Sensor Tower, RevenueCat and AARP. Partially supported and corrected above: the QDRO 18-month rule (runs from the first payment date under the order, not receipt), the Marketplace special enrollment rule (loss of coverage, not divorce itself), and the French figures (about 45 divorces per 100 marriages, most by notarial agreement). Newly established by the competitor check (P2): Anchor exists. Not yet verified: the G9 country counts, the co-parenting app prices quoted by the audit, and the Medicare rules.
 
 ## Sources
+
+- Anchor, Divorce and Co-Parent (App Store): https://apps.apple.com/us/app/anchor-divorce-co-parent/id6757443865
+- Hello Divorce plans: https://hellodivorce.com/plans
+- NCFMR FP-24-12, Marriage duration at gray divorce: https://www.bgsu.edu/ncfmr/resources/data/family-profiles/FP-24-12.html
+- 29 U.S.C. 1056(d)(3) (ERISA QDRO provisions): https://www.law.cornell.edu/uscode/text/29/1056
+- AARP 2025 Tech Trends: https://www.aarp.org/pri/topics/technology/internet-media-devices/2025-technology-trends-older-adults/
 
 - NCFMR FP-25-24, Age Variation in the Refined Divorce Rate, 1990 and 2023: https://www.bgsu.edu/ncfmr/resources/data/family-profiles/FP-25-24.html
 - Lin and Brown, The Economic Consequences of Gray Divorce for Women and Men (2021): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9766040/

@@ -6,7 +6,7 @@
 
 ## Verdict
 
-**#1 Japan.** Largest pool of long-marriage divorces among high-spending app markets, the highest iOS share and per-capita app spend of any candidate, a hard legal deadline that most divorced women currently miss (only about 18% claim the pension split), a fresh April 2026 law change to launch on, a proven one-time-purchase category, and a moderate, predictable privacy regime.
+**#1 Japan.** Not the biggest by headcount: by the wife's age at divorce, Japan has about 36,000 women 50+ divorcing a year, close to Germany (41,000), France (39,000) and Korea (37,000) and far below Brazil (88,000). Japan wins on what the headcount can pay and on friction: the highest iOS share and per-capita app spend of any candidate; about 90% of divorces are filed at a municipal office with no court, so the pension split is claimed by the wife herself and about 82% never claim it; a hard deadline (2 years, 5 years from April 2026); a fresh law change to launch on; a proven one-time-purchase category; and a moderate, predictable privacy regime. The external audit's friction estimate: about 39,000 self-filed pension cases a year in Japan against about 4,000 in Germany, where the court runs the split.
 
 **Runner-up: Germany.** Largest EU pool, high spend, the strongest women-finance channel found anywhere (Madame Moneypenny, herMoney), and the GDPR/DSA build is reusable for Spain, Italy and France. Loses to Japan because the German pension split is run by the court automatically, which removes the sharpest deadline.
 
@@ -18,19 +18,43 @@ Weights: Demand 25, Ability to pay 20, Whitespace 15, Pain and deadlines 15, Cha
 
 | Rank | Market | Demand | Pay | Whitespace | Pain | Channel | Execution | Total |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Japan | 22 | 19 | 11 | 14 | 8 | 11 | **85** |
-| 2 | Germany | 17 | 15 | 12 | 10 | 9 | 9 | **72** |
+| 1 | Japan | 19 | 19 | 11 | 14 | 8 | 11 | **82** |
+| 2 | Germany | 19 | 15 | 12 | 10 | 9 | 9 | **74** |
 | 3 | South Korea | 18 | 12 | 14 | 14 | 6 | 6 | **70** |
-| 4 | Italy | 18 | 10 | 11 | 8 | 6 | 8 | 61 |
-| 5 | Spain (+ Spanish LATAM reuse) | 17 | 10 | 11 | 8 | 6 | 8 | 60 |
-| 6 | France | 16 | 13 | 8 | 7 | 6 | 8 | 58 |
-| 7 | Taiwan | 9 | 12 | 11 | 6 | 5 | 8 | 51 |
-| 8 | Brazil | 15 | 5 | 10 | 7 | 5 | 7 | 49 |
-| 8 | Mexico | 16 | 4 | 12 | 6 | 4 | 7 | 49 |
-| 10 | Netherlands | 8 | 12 | 4 | 8 | 6 | 8 | 46 |
-| 10 | Turkey | 14 | 4 | 12 | 6 | 4 | 6 | 46 |
+| 4 | France | 18 | 13 | 8 | 7 | 6 | 8 | 60 |
+| 5 | Italy | 16 | 10 | 11 | 8 | 6 | 8 | 59 |
+| 6 | Spain (+ Spanish LATAM reuse) | 15 | 10 | 11 | 8 | 6 | 8 | 58 |
+| 7 | Brazil | 22 | 5 | 10 | 7 | 5 | 7 | 56 |
+| 8 | Mexico | 18 | 4 | 12 | 6 | 4 | 7 | 51 |
+| 8 | Taiwan | 9 | 12 | 11 | 6 | 5 | 8 | 51 |
+| 10 | Turkey | 13 | 4 | 12 | 6 | 4 | 6 | 45 |
+| 11 | Netherlands | 6 | 12 | 4 | 8 | 6 | 8 | 44 |
 | 12 | Poland | 7 | 6 | 11 | 6 | 4 | 8 | 42 |
-| — | Indonesia, Malaysia, Gulf | not scored: data not collected in this pass; low paid-app spend or small 50+ pools expected | | | | | | |
+| — | Indonesia, Malaysia, Gulf | not scored: data not collected; low paid-app spend or small 50+ pools expected | | | | | | |
+
+Demand scores were revised on 6 September 2026 using the wife's-age counts below, which replaced the mixed duration-based proxies used in the first pass. The order of the top three did not change.
+
+### Women 50+ divorcing per year, by the wife's age at divorce
+
+Source: Gemini Deep Research run G9 citing the national tables named in the last column. Not independently verified in this session; the C2 audit should check these before they are quoted externally.
+
+| Country | Year | Women 50+ divorcing | Rate per 1,000 women 50+ | Share of all divorces | Table |
+|---|---|---|---|---|---|
+| Brazil | 2022 | 88,412 | 2.81 | 21.0% | IBGE SIDRA 5937 |
+| Germany | 2022 | 41,430 | 1.97 | 30.2% | Destatis GENESIS 12631-0003 |
+| France | 2022 | about 39,200 (duration proxy) | 2.72 | 30.5% | INSEE and Ministry of Justice |
+| Mexico | 2023 | 38,824 | 2.26 | 23.7% | INEGI ED |
+| South Korea | 2023 | 36,948 | 3.19 | 40.0% | KOSIS divorces by age of wife |
+| Japan | 2022 | 35,662 | 1.05 | 19.9% | MHLW Vital Statistics 9-18 |
+| United Kingdom | 2021 | 33,550 | 2.47 | 27.6% | ONS Table 3 plus NRS and NISRA |
+| Italy | 2022 | 28,410 | 1.95 | 34.4% | ISTAT |
+| Spain | 2022 | 24,455 | 2.26 | 30.1% | INE ENSD 02003 |
+| Canada | 2020 | 14,215 | 1.74 | 33.1% | StatCan 39-10-0051-01 |
+| Australia | 2022 | 13,150 | 2.67 | 26.7% | ABS 3310.0 Table 11 |
+| Taiwan | 2023 | 13,142 | 2.60 | 24.8% | MOI |
+| Netherlands | 2022 | 7,912 | 2.00 | 32.8% | CBS StatLine |
+
+Two readings matter. Korea has the highest propensity (3.19 per 1,000 and 40% of all divorces) but the second-worst platform mix. Japan has the lowest propensity of the thirteen; its case rests on ability to pay and the self-filed deadline, not on demographics.
 
 ## Evidence by market
 
@@ -78,7 +102,7 @@ Weights: Demand 25, Ability to pay 20, Whitespace 15, Pain and deadlines 15, Cha
 
 | Market | Existing products | Prices | Channels found |
 |---|---|---|---|
-| Japan | movell (離婚準備アプリ): one-time ¥1,500, on-device storage, PDF export, pre-divorce scope; free web checklists (手続きプランナー, ATOM法律事務所, ベンナビ離婚); no paid post-decree app for 50+ | ¥1,500 anchor; FP divorce cash-flow simulations from ¥33,000; counsellors ¥5,000-10,000/hour | FP firms with divorce desks, NPO日本家族問題相談連盟 certified divorce counsellors, 岡野あつこ network and YouTube (40-60代 年金分割 content), family-law firms, 年金事務所 |
+| Japan | movell (離婚準備アプリ): ¥1,500 one-time unlock per movell.jp, listed as free on a third-party database (confirm); App Store 4.8 with 5 reviews, updated July 2026; on-device storage, PDF export, pre-divorce scope. Free web checklists (手続きプランナー, ATOM法律事務所, ベンナビ離婚). A second pass (P3) found no Japanese app covering the first 30 days after divorce for women 50+ | ¥1,500 anchor; FP divorce cash-flow simulations from ¥33,000; counsellors ¥5,000-10,000/hour | FP firms with divorce desks, NPO日本家族問題相談連盟 certified divorce counsellors, 岡野あつこ network and YouTube (40-60代 年金分割 content), family-law firms, 年金事務所 |
 | South Korea | None found in three Korean app-store and blog searches (results were wedding and remarriage apps) | Lawyer marketplace hourly fees | LawTalk (로톡), large 이혼 law firms with 황혼이혼 pages, NPS online split-pension application via Naver/Kakao login, 정부24 |
 | Germany | Lawyer-funnel and co-parenting apps only (Borgelt "Meine Scheidung", "Getrennt-Gemeinsam"); free checklists (ehe-scheidung-online.de) | Free; lawyer fees (RVG) up 6-9% in June 2025 | Madame Moneypenny (100k+ member Facebook group, free post-divorce workbook), herMoney, GeldGefährtinnen, Fachanwälte für Familienrecht |
 | France | Free 45-step interactive checklist (renaitredivorce.fr), free coaching (aide-divorce.fr), calculators | Patrimonial reviews €500-2,000; co-parenting apps about €99/parent/year | Notaires, conseillers en gestion de patrimoine |
@@ -111,7 +135,7 @@ Stage 2: within 14 days of the divorce or move (municipal office, 市区町村)
 
 Stage 3: pension and money deadlines
 - File 標準報酬改定請求書 for the pension split within 2 years of divorce (divorces before 1 April 2026) or 5 years (on or after). The split covers the earnings-related 厚生年金 portion only.
-- Property division claim (財産分与) period: 2 years, extended to 5 years under the 2024 Civil Code amendment effective 1 April 2026 (confirm with counsel).
+- Property division claim (財産分与) period: 2 years, extended to 5 years by Act No. 33 of 2024 amending Civil Code Art. 768(2), effective 1 April 2026 and not retroactive (confirmed by the C1 audit and the family court guidance found in P3).
 - 慰謝料 claims: 3 years.
 - Housing loan and title: 名義変更 (registration), remove guarantor status, bank negotiation.
 - Life-insurance beneficiary change, will (遺言書) update, bank and card name/address.
@@ -124,7 +148,7 @@ Stage 4: 90-day reset
 
 Local price test: ¥4,980 vs ¥9,800 one-time (about USD 33-65). The movell ¥1,500 anchor makes the US price of $99-149 unrealistic in Japan; FP simulations at ¥33,000 leave room above ¥1,500.
 
-Channels to test first: FP firms with divorce desks, certified divorce counsellors (認定離婚カウンセラー), YouTube creators covering 熟年離婚 and 年金分割, the 2026 deadline-extension news cycle, and 年金事務所 or municipal counters (leaflet or QR partnership).
+Channels to test first (full map in `docs/research/channels-japan.md`): 岡野あつこ and 松本恵美 on YouTube, the 『熟年離婚』56歳ケイの日常 channel (24,700 subscribers), women-led 行政書士 practices (Smilesupport, TIDE), FP firms with divorce desks, certified divorce counsellors, 年金事務所 and municipal counters, and 弁護士ドットコム for lead generation.
 
 Main risks
 - Price anchor at ¥1,500 and free law-firm checklists.
@@ -139,7 +163,7 @@ Main risks
 
 ## Verification status
 
-The deep-research harness completed its search and fetch phases for this question: 5 search angles, 15 fetched sources, 10 extracted claims. The automated adversarial verification step failed on the account usage limit and was not re-run, to save tokens. Cross-checked by hand in this session with independent searches: the Korea 2024 and 2025 statistics, the Japan 2026 pension-split deadline change, the Destatis 2024 figures, the INE, INEGI, GUS, CBS and Taiwan figures, and the Italy 2024 counts. The Korea split-pension article was independently corroborated by same-day Yonhap and Hankyoreh reports. Not independently checked: the Sensor Tower spend figures, the StatCounter shares, the MIC and NIA survey numbers, and the privacy-law summaries. Several primary sources (bgsu.edu, destatis.de, istat.it, fnnews.com, drees, bakermckenzie.com) are blocked by this environment's egress proxy, so their figures come from search-index snippets and secondary reporting. Re-check them against the originals before publication.
+The first-pass figures were checked by an external audit (Claude Research run C1, 6 September 2026): the Korean split-pension statistics (111,317 recipients by early 2026, 9.4x in a decade, 88.1% women), the Japan 2026 changes, and the Destatis, INE and ISTAT 2024 figures were supported. The wife's-age counts come from a Gemini Deep Research run (G9) and have not been independently verified. The Japan channel map (P3) confirmed the pension-split and property-division periods against 日本年金機構 and 家庭裁判所 guidance. Still unverified: the Sensor Tower and StatCounter numbers, the MIC and NIA survey figures, and the privacy-law summaries.
 
 ## Sources
 

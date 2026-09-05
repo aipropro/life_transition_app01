@@ -1,12 +1,41 @@
 {
   "market": "US",
   "language": "en",
-  "version": "2026-09-05",
+  "version": "2026-09-06",
   "status": "research-draft; each task carries a verified flag (true = primary source read in research, false = standard practice, confirm with counsel before shipping)",
   "disclaimer": "This app organizes tasks and documents. It is not a substitute for the advice of an attorney, tax professional or financial adviser.",
-  "stage_order": ["pre-filing", "pending", "decree-received", "post-decree"],
-  "categories": ["documents", "money", "credit", "housing", "insurance", "health", "tax", "retirement", "benefits", "identity", "estate", "security", "professional"],
-  "deadline_anchor_fields": ["separation_date", "filing_date", "decree_date", "coverage_loss_date", "cobra_notice_date", "qdro_submitted_date", "birth_date", "marriage_date"],
+  "stage_order": [
+    "pre-filing",
+    "pending",
+    "decree-received",
+    "post-decree"
+  ],
+  "categories": [
+    "documents",
+    "money",
+    "credit",
+    "housing",
+    "insurance",
+    "health",
+    "tax",
+    "retirement",
+    "benefits",
+    "identity",
+    "estate",
+    "security",
+    "professional"
+  ],
+  "deadline_anchor_fields": [
+    "separation_date",
+    "filing_date",
+    "decree_date",
+    "coverage_loss_date",
+    "cobra_notice_date",
+    "qdro_submitted_date",
+    "birth_date",
+    "marriage_date",
+    "first_payment_due_date"
+  ],
   "stages": [
     {
       "id": "pre-filing",
@@ -18,8 +47,21 @@
           "title": "Build the financial inventory",
           "category": "documents",
           "why": "Every later step (disclosure, settlement, QDRO, taxes) depends on a complete list of accounts, assets and debts.",
-          "how": ["List every account: checking, savings, brokerage, retirement, pensions, HSA, crypto, business interests.", "Collect the last 3 years of tax returns, recent pay stubs, and the latest statement for each account.", "List debts: mortgage, HELOC, cards, auto, student, personal loans, tax owed.", "Photograph or scan deeds, titles, insurance policies, and any prenup or postnup."],
-          "documents": ["tax returns (3 years)", "pay stubs", "account statements", "retirement plan statements", "deeds and titles", "insurance policies", "loan statements"],
+          "how": [
+            "List every account: checking, savings, brokerage, retirement, pensions, HSA, crypto, business interests.",
+            "Collect the last 3 years of tax returns, recent pay stubs, and the latest statement for each account.",
+            "List debts: mortgage, HELOC, cards, auto, student, personal loans, tax owed.",
+            "Photograph or scan deeds, titles, insurance policies, and any prenup or postnup."
+          ],
+          "documents": [
+            "tax returns (3 years)",
+            "pay stubs",
+            "account statements",
+            "retirement plan statements",
+            "deeds and titles",
+            "insurance policies",
+            "loan statements"
+          ],
           "deadline": null,
           "professional": null,
           "source": "https://www.irs.gov/publications/p504",
@@ -30,8 +72,14 @@
           "title": "Pull all three credit reports",
           "category": "credit",
           "why": "Finds joint accounts and debts you may not know about, and sets a baseline before accounts are separated.",
-          "how": ["Request free reports from Equifax, Experian and TransUnion at annualcreditreport.com.", "Mark every joint account and every account where the other spouse is an authorized user.", "Save a PDF of each report in the vault."],
-          "documents": ["credit reports (3)"],
+          "how": [
+            "Request free reports from Equifax, Experian and TransUnion at annualcreditreport.com.",
+            "Mark every joint account and every account where the other spouse is an authorized user.",
+            "Save a PDF of each report in the vault."
+          ],
+          "documents": [
+            "credit reports (3)"
+          ],
           "deadline": null,
           "professional": null,
           "source": "https://www.annualcreditreport.com",
@@ -42,8 +90,16 @@
           "title": "Request retirement plan documents and QDRO procedures",
           "category": "retirement",
           "why": "Employer plans (401k, pension) are divided only by a court order the plan accepts as 'qualified'. Plans must have written QDRO procedures; getting them early avoids months of delay later.",
-          "how": ["For each employer plan (yours and your spouse's), ask the plan administrator for the summary plan description and the plan's QDRO procedures and model language.", "Note whether each plan is defined contribution (401k, 403b) or defined benefit (pension).", "IRAs are not split by QDRO; they transfer under the decree (see dr-06)."],
-          "documents": ["summary plan descriptions", "plan QDRO procedures", "latest plan statements"],
+          "how": [
+            "For each employer plan (yours and your spouse's), ask the plan administrator for the summary plan description and the plan's QDRO procedures and model language.",
+            "Note whether each plan is defined contribution (401k, 403b) or defined benefit (pension).",
+            "IRAs are not split by QDRO; they transfer under the decree (see dr-06)."
+          ],
+          "documents": [
+            "summary plan descriptions",
+            "plan QDRO procedures",
+            "latest plan statements"
+          ],
           "deadline": null,
           "professional": "attorney or QDRO specialist",
           "source": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/qdros-practical-guide",
@@ -54,9 +110,19 @@
           "title": "Get your Social Security statement and check the 10-year mark",
           "category": "benefits",
           "why": "A divorced spouse can claim on the ex-spouse's record only if the marriage lasted at least 10 years (marriage date to final decree date). If you are close to 10 years, the decree date matters.",
-          "how": ["Create or log in to my Social Security at ssa.gov/myaccount and save your statement.", "Record the marriage date; compute years married to today.", "If under 10 years, discuss the timing of the final decree with your attorney. The app does not advise on timing."],
-          "documents": ["Social Security statement", "marriage certificate"],
-          "deadline": {"type": "info", "rule": "10 years from marriage_date to decree_date"},
+          "how": [
+            "Create or log in to my Social Security at ssa.gov/myaccount and save your statement.",
+            "Record the marriage date; compute years married to today.",
+            "If under 10 years, discuss the timing of the final decree with your attorney. The app does not advise on timing."
+          ],
+          "documents": [
+            "Social Security statement",
+            "marriage certificate"
+          ],
+          "deadline": {
+            "type": "info",
+            "rule": "10 years from marriage_date to decree_date"
+          },
           "professional": "attorney",
           "source": "https://www.ssa.gov/family/eligibility",
           "verified": true
@@ -66,7 +132,11 @@
           "title": "Open an individual bank account and separate email",
           "category": "money",
           "why": "Income, support and settlement money need a place only you control.",
-          "how": ["Open a checking account in your name only at a bank where your spouse has no accounts.", "Set up a private email address for legal and financial correspondence.", "Do not move joint funds without checking with your attorney; some states restrict transfers once a case is filed."],
+          "how": [
+            "Open a checking account in your name only at a bank where your spouse has no accounts.",
+            "Set up a private email address for legal and financial correspondence.",
+            "Do not move joint funds without checking with your attorney; some states restrict transfers once a case is filed."
+          ],
           "documents": [],
           "deadline": null,
           "professional": "attorney",
@@ -78,7 +148,11 @@
           "title": "Change passwords and turn on two-factor authentication",
           "category": "security",
           "why": "Shared devices and saved logins expose bank, email, and cloud accounts.",
-          "how": ["Change passwords on email, bank, brokerage, phone carrier, cloud storage, and social accounts.", "Remove your accounts from shared devices; check location sharing on phones and cars.", "Update recovery phone numbers and emails on every account."],
+          "how": [
+            "Change passwords on email, bank, brokerage, phone carrier, cloud storage, and social accounts.",
+            "Remove your accounts from shared devices; check location sharing on phones and cars.",
+            "Update recovery phone numbers and emails on every account."
+          ],
           "documents": [],
           "deadline": null,
           "professional": null,
@@ -90,8 +164,16 @@
           "title": "Map your health coverage",
           "category": "health",
           "why": "If you are covered under your spouse's employer plan, divorce ends that coverage. Your options (COBRA, Marketplace, your own employer, Medicare) each have short windows that start at the decree.",
-          "how": ["Record who holds the plan, the employer, plan name, and the plan administrator's contact.", "Save the summary of benefits and the COBRA notice you received when coverage began.", "List doctors and prescriptions you must keep in-network."],
-          "documents": ["insurance card", "summary of benefits", "initial COBRA notice"],
+          "how": [
+            "Record who holds the plan, the employer, plan name, and the plan administrator's contact.",
+            "Save the summary of benefits and the COBRA notice you received when coverage began.",
+            "List doctors and prescriptions you must keep in-network."
+          ],
+          "documents": [
+            "insurance card",
+            "summary of benefits",
+            "initial COBRA notice"
+          ],
           "deadline": null,
           "professional": null,
           "source": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/faqs/cobra-continuation-health-coverage-workers",
@@ -102,8 +184,15 @@
           "title": "Current cash-flow snapshot",
           "category": "money",
           "why": "Support, housing, and settlement talks start from real numbers.",
-          "how": ["List monthly income by source.", "List monthly expenses by category, including insurance premiums and debt payments.", "Save the snapshot; you will make a second one after the decree."],
-          "documents": ["bank statements (3 months)", "pay stubs"],
+          "how": [
+            "List monthly income by source.",
+            "List monthly expenses by category, including insurance premiums and debt payments.",
+            "Save the snapshot; you will make a second one after the decree."
+          ],
+          "documents": [
+            "bank statements (3 months)",
+            "pay stubs"
+          ],
           "deadline": null,
           "professional": "CDFA",
           "source": null,
@@ -114,8 +203,14 @@
           "title": "Book the first professional meeting and build the packet",
           "category": "professional",
           "why": "One organized hour costs less than three disorganized ones.",
-          "how": ["Choose an attorney; consider a Certified Divorce Financial Analyst for retirement and tax-heavy estates.", "Export the meeting packet: inventory, credit report summary, plan list, questions.", "Write down your top three questions before the meeting."],
-          "documents": ["meeting packet (app export)"],
+          "how": [
+            "Choose an attorney; consider a Certified Divorce Financial Analyst for retirement and tax-heavy estates.",
+            "Export the meeting packet: inventory, credit report summary, plan list, questions.",
+            "Write down your top three questions before the meeting."
+          ],
+          "documents": [
+            "meeting packet (app export)"
+          ],
           "deadline": null,
           "professional": "attorney, CDFA",
           "source": "https://institutedfa.com/find-a-cdfa/",
@@ -126,8 +221,14 @@
           "title": "Inventory beneficiaries and emergency contacts (do not change yet)",
           "category": "estate",
           "why": "You will need to update every one of these after the decree. Some states impose automatic orders once a case is filed that bar changes until it ends.",
-          "how": ["List the beneficiary on each retirement plan, IRA, life policy, annuity, and payable-on-death account.", "List emergency contacts on file with employer, doctors, and schools.", "Ask your attorney before changing any beneficiary while a case is pending."],
-          "documents": ["beneficiary confirmations"],
+          "how": [
+            "List the beneficiary on each retirement plan, IRA, life policy, annuity, and payable-on-death account.",
+            "List emergency contacts on file with employer, doctors, and schools.",
+            "Ask your attorney before changing any beneficiary while a case is pending."
+          ],
+          "documents": [
+            "beneficiary confirmations"
+          ],
           "deadline": null,
           "professional": "attorney",
           "source": null,
@@ -145,8 +246,13 @@
           "title": "Check for automatic restraining orders",
           "category": "professional",
           "why": "Several states (California is the best-known) bar both spouses from changing insurance, beneficiaries, or moving assets while the case is open. Violations can be sanctioned.",
-          "how": ["Ask your attorney whether automatic orders apply in your state and what they cover.", "Pause beneficiary, insurance, and account changes until the decree unless the court allows them."],
-          "documents": ["summons and any standing orders"],
+          "how": [
+            "Ask your attorney whether automatic orders apply in your state and what they cover.",
+            "Pause beneficiary, insurance, and account changes until the decree unless the court allows them."
+          ],
+          "documents": [
+            "summons and any standing orders"
+          ],
           "deadline": null,
           "professional": "attorney",
           "source": null,
@@ -157,9 +263,17 @@
           "title": "Track court financial disclosure deadlines",
           "category": "documents",
           "why": "Missing disclosure deadlines delays the case and can affect the outcome.",
-          "how": ["Enter each court deadline your attorney gives you.", "Attach the documents you submitted to each deadline."],
-          "documents": ["financial disclosure forms"],
-          "deadline": {"type": "user-entered", "rule": "court-set"},
+          "how": [
+            "Enter each court deadline your attorney gives you.",
+            "Attach the documents you submitted to each deadline."
+          ],
+          "documents": [
+            "financial disclosure forms"
+          ],
+          "deadline": {
+            "type": "user-entered",
+            "rule": "court-set"
+          },
           "professional": "attorney",
           "source": null,
           "verified": false
@@ -169,8 +283,15 @@
           "title": "Draft the QDRO with the settlement, not after",
           "category": "retirement",
           "why": "A QDRO drafted after the decree often takes months and a second court trip. Many plans will pre-review a draft.",
-          "how": ["Ask the attorney or QDRO preparer to draft the order alongside the settlement.", "Send the draft to the plan administrator for pre-approval where the plan allows it.", "Confirm who pays the QDRO preparation fee; it is usually billed separately."],
-          "documents": ["draft QDRO", "plan pre-approval letter"],
+          "how": [
+            "Ask the attorney or QDRO preparer to draft the order alongside the settlement.",
+            "Send the draft to the plan administrator for pre-approval where the plan allows it.",
+            "Confirm who pays the QDRO preparation fee; it is usually billed separately."
+          ],
+          "documents": [
+            "draft QDRO",
+            "plan pre-approval letter"
+          ],
           "deadline": null,
           "professional": "attorney or QDRO specialist",
           "source": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/qdros-practical-guide",
@@ -181,8 +302,15 @@
           "title": "Compare health coverage options before the decree",
           "category": "health",
           "why": "COBRA can cost up to 102% of the full premium. The Marketplace window opens at coverage loss. Choosing before the decree avoids a gap.",
-          "how": ["Get the COBRA premium from the plan administrator.", "Price a Marketplace plan at healthcare.gov (or your state exchange) and your own employer plan if you have one.", "If 65 or older, check Medicare enrollment rules with SSA (see dr-04)."],
-          "documents": ["COBRA premium quote", "Marketplace quote"],
+          "how": [
+            "Get the COBRA premium from the plan administrator.",
+            "Price a Marketplace plan at healthcare.gov (or your state exchange) and your own employer plan if you have one.",
+            "If 65 or older, check Medicare enrollment rules with SSA (see dr-04)."
+          ],
+          "documents": [
+            "COBRA premium quote",
+            "Marketplace quote"
+          ],
           "deadline": null,
           "professional": null,
           "source": "https://www.healthcare.gov/coverage-outside-open-enrollment/special-enrollment-period/",
@@ -193,8 +321,16 @@
           "title": "Housing decision paperwork",
           "category": "housing",
           "why": "Keeping the house means removing the other spouse from the mortgage, which usually requires a refinance or an assumption, and a recorded deed.",
-          "how": ["Get a mortgage payoff statement and ask the servicer whether the loan is assumable.", "Get a pre-qualification for a refinance in your name alone if you plan to keep the home.", "Ask the attorney how the deed transfer and any buyout will be worded in the decree."],
-          "documents": ["mortgage statement", "payoff letter", "deed"],
+          "how": [
+            "Get a mortgage payoff statement and ask the servicer whether the loan is assumable.",
+            "Get a pre-qualification for a refinance in your name alone if you plan to keep the home.",
+            "Ask the attorney how the deed transfer and any buyout will be worded in the decree."
+          ],
+          "documents": [
+            "mortgage statement",
+            "payoff letter",
+            "deed"
+          ],
           "deadline": null,
           "professional": "attorney, lender, title company",
           "source": null,
@@ -205,9 +341,16 @@
           "title": "Tax status planning for the decree year",
           "category": "tax",
           "why": "Your filing status for the whole year is fixed by whether the decree is final on December 31. Alimony under instruments executed after 2018 is neither deductible nor taxable.",
-          "how": ["Record the expected decree date and note whether it falls before or after December 31.", "Ask a tax professional how filing status, dependents, and any support terms interact.", "The app records the facts; it does not recommend a filing strategy."],
+          "how": [
+            "Record the expected decree date and note whether it falls before or after December 31.",
+            "Ask a tax professional how filing status, dependents, and any support terms interact.",
+            "The app records the facts; it does not recommend a filing strategy."
+          ],
           "documents": [],
-          "deadline": {"type": "info", "rule": "status fixed by marital status on December 31 of the tax year"},
+          "deadline": {
+            "type": "info",
+            "rule": "status fixed by marital status on December 31 of the tax year"
+          },
           "professional": "tax professional",
           "source": "https://www.irs.gov/publications/p504",
           "verified": true
@@ -217,7 +360,10 @@
           "title": "Decide on name restoration inside the decree",
           "category": "identity",
           "why": "Having the decree restore a former name avoids a separate court petition later.",
-          "how": ["Tell your attorney if you want a former name restored.", "Confirm the decree language before it is signed."],
+          "how": [
+            "Tell your attorney if you want a former name restored.",
+            "Confirm the decree language before it is signed."
+          ],
           "documents": [],
           "deadline": null,
           "professional": "attorney",
@@ -229,7 +375,11 @@
           "title": "Update the budget with proposed support and expenses",
           "category": "money",
           "why": "A settlement that does not cash-flow is a problem you find out about after the decree.",
-          "how": ["Enter proposed support received or paid.", "Add new costs: health premiums, housing, insurance in your own name.", "Export the snapshot for your attorney or CDFA."],
+          "how": [
+            "Enter proposed support received or paid.",
+            "Add new costs: health premiums, housing, insurance in your own name.",
+            "Export the snapshot for your attorney or CDFA."
+          ],
           "documents": [],
           "deadline": null,
           "professional": "CDFA",
@@ -248,9 +398,19 @@
           "title": "Order certified copies of the decree",
           "category": "documents",
           "why": "SSA, DMV, passport, plan administrators, lenders, and banks each want a certified copy.",
-          "how": ["Order at least five certified copies from the court clerk.", "Scan one copy into the vault; keep originals in a safe place."],
-          "documents": ["certified decree copies"],
-          "deadline": {"type": "relative", "anchor": "decree_date", "days": 14, "hard": false},
+          "how": [
+            "Order at least five certified copies from the court clerk.",
+            "Scan one copy into the vault; keep originals in a safe place."
+          ],
+          "documents": [
+            "certified decree copies"
+          ],
+          "deadline": {
+            "type": "relative",
+            "anchor": "decree_date",
+            "days": 14,
+            "hard": false
+          },
           "professional": null,
           "source": null,
           "verified": false
@@ -260,9 +420,23 @@
           "title": "COBRA: notify the plan within 60 days of the divorce",
           "category": "health",
           "why": "Divorce is a COBRA qualifying event, but the covered spouse must tell the plan within 60 days. Miss it and the COBRA right is lost. Coverage can last up to 36 months at up to 102% of the full premium.",
-          "how": ["Send written notice of the divorce to the plan administrator (employer HR) within 60 days of the decree; keep proof of delivery.", "The plan then has 14 days to send an election notice.", "Elect within 60 days of the notice or the coverage loss, whichever is later.", "Pay the first premium within 45 days of electing."],
-          "documents": ["notice to plan", "election notice", "premium receipts"],
-          "deadline": {"type": "relative", "anchor": "decree_date", "days": 60, "hard": true},
+          "how": [
+            "Send written notice of the divorce to the plan administrator (employer HR) within 60 days of the decree; keep proof of delivery.",
+            "The plan then has 14 days to send an election notice.",
+            "Elect within 60 days of the notice or the coverage loss, whichever is later.",
+            "Pay the first premium within 45 days of electing."
+          ],
+          "documents": [
+            "notice to plan",
+            "election notice",
+            "premium receipts"
+          ],
+          "deadline": {
+            "type": "relative",
+            "anchor": "decree_date",
+            "days": 60,
+            "hard": true
+          },
           "professional": null,
           "source": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/faqs/cobra-continuation-health-coverage-workers",
           "verified": true
@@ -272,9 +446,19 @@
           "title": "Marketplace: 60-day special enrollment after losing coverage",
           "category": "health",
           "why": "Losing coverage because of divorce opens a 60-day Special Enrollment Period on healthcare.gov, before and after the loss date. Divorce alone, without a loss of coverage, does not open it in HealthCare.gov states. Miss it and you wait for open enrollment (Nov 1 to Jan 15).",
-          "how": ["Apply at healthcare.gov or your state exchange within 60 days of the coverage loss date.", "Upload proof of the coverage loss."],
-          "documents": ["proof of coverage loss"],
-          "deadline": {"type": "relative", "anchor": "coverage_loss_date", "days": 60, "hard": true},
+          "how": [
+            "Apply at healthcare.gov or your state exchange within 60 days of the coverage loss date.",
+            "Upload proof of the coverage loss."
+          ],
+          "documents": [
+            "proof of coverage loss"
+          ],
+          "deadline": {
+            "type": "relative",
+            "anchor": "coverage_loss_date",
+            "days": 60,
+            "hard": true
+          },
           "professional": null,
           "source": "https://www.healthcare.gov/coverage-outside-open-enrollment/special-enrollment-period/",
           "verified": true
@@ -284,9 +468,20 @@
           "title": "Medicare check if you are 65 or older",
           "category": "health",
           "why": "Losing employer coverage opens a Medicare Part B special enrollment window, and a divorced spouse may qualify for premium-free Part A on the ex-spouse's work record after a 10-year marriage.",
-          "how": ["Call SSA or use ssa.gov to confirm your Part A and Part B options and windows.", "Record the date employer coverage ended."],
-          "documents": ["coverage end letter"],
-          "deadline": {"type": "relative", "anchor": "coverage_loss_date", "days": 240, "hard": true, "note": "8-month Part B special enrollment window; confirm with SSA"},
+          "how": [
+            "Call SSA or use ssa.gov to confirm your Part A and Part B options and windows.",
+            "Record the date employer coverage ended."
+          ],
+          "documents": [
+            "coverage end letter"
+          ],
+          "deadline": {
+            "type": "relative",
+            "anchor": "coverage_loss_date",
+            "days": 240,
+            "hard": true,
+            "note": "8-month Part B special enrollment window; confirm with SSA"
+          },
           "professional": null,
           "source": "https://www.ssa.gov/family/eligibility",
           "verified": false
@@ -295,21 +490,43 @@
           "id": "dr-05",
           "title": "Submit the QDRO and track qualification",
           "category": "retirement",
-          "why": "Nothing moves until the plan accepts the order as qualified. While the order is under review the plan sets aside the amounts for up to 18 months; if it is not qualified within 18 months, the plan pays the participant instead.",
-          "how": ["Get the judge-signed QDRO and send a certified copy to the plan administrator; keep proof of delivery.", "Log the plan's acknowledgment and the date it says it will decide.", "If the plan rejects the order, get the reasons in writing and return to the attorney or QDRO preparer.", "When qualified, confirm the amount, the valuation date, and your payment or rollover options in writing."],
-          "documents": ["signed QDRO", "plan acknowledgment", "qualification letter"],
-          "deadline": {"type": "relative", "anchor": "qdro_submitted_date", "days": 540, "hard": true, "note": "18-month segregation period"},
+          "why": "Nothing moves until the plan accepts the order as qualified. The plan must decide within a reasonable period; 18 months is not a grace period. While an order is under review the plan separately accounts for the amounts payable to you for up to 18 months, counted from the date the first payment would be due under the order. If the order is not qualified by then, the plan pays the participant instead.",
+          "how": [
+            "Get the judge-signed QDRO and send a certified copy to the plan administrator; keep proof of delivery.",
+            "Log the plan's acknowledgment and the date it says it will decide.",
+            "If the plan rejects the order, get the reasons in writing and return to the attorney or QDRO preparer.",
+            "When qualified, confirm the amount, the valuation date, and your payment or rollover options in writing."
+          ],
+          "documents": [
+            "signed QDRO",
+            "plan acknowledgment",
+            "qualification letter"
+          ],
+          "deadline": {
+            "type": "relative",
+            "anchor": "first_payment_due_date",
+            "days": 540,
+            "hard": true,
+            "note": "18-month segregation period under 29 U.S.C. 1056(d)(3)(H); runs from the first payment date under the order, not from receipt"
+          },
           "professional": "attorney or QDRO specialist",
           "source": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/qdros-practical-guide",
-          "verified": true
+          "verified": true,
+          "legal_basis": "29 U.S.C. 1056(d)(3); IRC 414(p)"
         },
         {
           "id": "dr-06",
           "title": "IRA transfer incident to divorce",
           "category": "retirement",
           "why": "An IRA share transferred under the decree or an instrument incident to it is not a taxable transfer and becomes your own IRA from the transfer date. Taking cash instead can be taxable.",
-          "how": ["Send the decree language to the IRA custodian and ask for a direct trustee-to-trustee transfer into an IRA in your name.", "Do not accept a check made out to you without asking a tax professional first."],
-          "documents": ["decree pages on IRA division", "custodian transfer form"],
+          "how": [
+            "Send the decree language to the IRA custodian and ask for a direct trustee-to-trustee transfer into an IRA in your name.",
+            "Do not accept a check made out to you without asking a tax professional first."
+          ],
+          "documents": [
+            "decree pages on IRA division",
+            "custodian transfer form"
+          ],
           "deadline": null,
           "professional": "tax professional",
           "source": "https://www.irs.gov/publications/p504",
@@ -320,9 +537,20 @@
           "title": "Update every beneficiary designation",
           "category": "estate",
           "why": "Employer plans and group life insurance pay the person named on the form on file. A divorce decree does not remove an ex-spouse from an ERISA plan (Egelhoff v. Egelhoff, 2001). Check first whether the decree requires you to keep a specific beneficiary, for example life insurance securing support.",
-          "how": ["401k, 403b, pension, and employer life: file new beneficiary forms with the plan.", "IRAs, annuities, individual life policies, payable-on-death and transfer-on-death accounts, HSAs: file new forms with each custodian.", "Save each confirmation in the vault."],
-          "documents": ["beneficiary confirmations"],
-          "deadline": {"type": "relative", "anchor": "decree_date", "days": 30, "hard": false},
+          "how": [
+            "401k, 403b, pension, and employer life: file new beneficiary forms with the plan.",
+            "IRAs, annuities, individual life policies, payable-on-death and transfer-on-death accounts, HSAs: file new forms with each custodian.",
+            "Save each confirmation in the vault."
+          ],
+          "documents": [
+            "beneficiary confirmations"
+          ],
+          "deadline": {
+            "type": "relative",
+            "anchor": "decree_date",
+            "days": 30,
+            "hard": false
+          },
           "professional": "attorney",
           "source": "https://supreme.justia.com/cases/federal/us/532/141/",
           "verified": true
@@ -332,8 +560,16 @@
           "title": "Name change: Social Security first",
           "category": "identity",
           "why": "Every other agency checks the name against SSA records, and the IRS rejects a return whose name does not match SSA.",
-          "how": ["Complete Form SS-5 and submit it with a certified decree (showing the restored name) and identity documents; there is no fee.", "Expect the new card in about 10 to 14 business days.", "Then update: DMV or state ID, passport, employer payroll and W-4, banks and cards, insurers, voter registration, professional licenses, utilities."],
-          "documents": ["Form SS-5", "certified decree", "photo ID"],
+          "how": [
+            "Complete Form SS-5 and submit it with a certified decree (showing the restored name) and identity documents; there is no fee.",
+            "Expect the new card in about 10 to 14 business days.",
+            "Then update: DMV or state ID, passport, employer payroll and W-4, banks and cards, insurers, voter registration, professional licenses, utilities."
+          ],
+          "documents": [
+            "Form SS-5",
+            "certified decree",
+            "photo ID"
+          ],
           "deadline": null,
           "professional": null,
           "source": "https://www.ssa.gov/forms/ss-5.pdf",
@@ -344,8 +580,15 @@
           "title": "Passport name change",
           "category": "identity",
           "why": "Travel documents must match the name on your ticket and ID.",
-          "how": ["If the passport was issued less than one year ago, use Form DS-5504 (no fee).", "Otherwise renew with Form DS-82 and include the certified decree or name-change document.", "Confirm current forms and fees at travel.state.gov."],
-          "documents": ["passport", "certified decree"],
+          "how": [
+            "If the passport was issued less than one year ago, use Form DS-5504 (no fee).",
+            "Otherwise renew with Form DS-82 and include the certified decree or name-change document.",
+            "Confirm current forms and fees at travel.state.gov."
+          ],
+          "documents": [
+            "passport",
+            "certified decree"
+          ],
           "deadline": null,
           "professional": null,
           "source": "https://travel.state.gov/content/travel/en/passports/have-passport/change-correct.html",
@@ -356,9 +599,19 @@
           "title": "New Form W-4 within 10 days",
           "category": "tax",
           "why": "IRS Publication 504 says that if you claimed a personal allowance for your spouse, you must give your employer a new W-4 within 10 days after the divorce or separation. Withholding usually needs adjusting anyway.",
-          "how": ["Submit a new W-4 to payroll.", "Use the IRS withholding estimator or ask a tax professional about estimated payments if you now receive support or investment income."],
-          "documents": ["Form W-4"],
-          "deadline": {"type": "relative", "anchor": "decree_date", "days": 10, "hard": true},
+          "how": [
+            "Submit a new W-4 to payroll.",
+            "Use the IRS withholding estimator or ask a tax professional about estimated payments if you now receive support or investment income."
+          ],
+          "documents": [
+            "Form W-4"
+          ],
+          "deadline": {
+            "type": "relative",
+            "anchor": "decree_date",
+            "days": 10,
+            "hard": true
+          },
           "professional": "tax professional",
           "source": "https://www.irs.gov/publications/p504",
           "verified": true
@@ -368,8 +621,14 @@
           "title": "Address and contact changes",
           "category": "identity",
           "why": "Tax notices, plan statements, and court mail must reach you.",
-          "how": ["IRS: Form 8822.", "USPS mail forwarding.", "SSA, banks, insurers, DMV, employer HR, plan administrators, the court."],
-          "documents": ["Form 8822"],
+          "how": [
+            "IRS: Form 8822.",
+            "USPS mail forwarding.",
+            "SSA, banks, insurers, DMV, employer HR, plan administrators, the court."
+          ],
+          "documents": [
+            "Form 8822"
+          ],
           "deadline": null,
           "professional": null,
           "source": "https://www.irs.gov/publications/p504",
@@ -380,9 +639,21 @@
           "title": "Separate joint accounts and credit",
           "category": "credit",
           "why": "The decree binds you and your ex-spouse; it does not bind creditors. A joint card your ex stops paying still hits your credit.",
-          "how": ["Close or convert each joint account as the decree directs; get written confirmation.", "Remove your ex as an authorized user, and ask to be removed from their accounts.", "Freeze or close joint credit lines and HELOCs.", "Send creditors a copy of the relevant decree pages if they ask."],
-          "documents": ["account closure confirmations"],
-          "deadline": {"type": "relative", "anchor": "decree_date", "days": 60, "hard": false},
+          "how": [
+            "Close or convert each joint account as the decree directs; get written confirmation.",
+            "Remove your ex as an authorized user, and ask to be removed from their accounts.",
+            "Freeze or close joint credit lines and HELOCs.",
+            "Send creditors a copy of the relevant decree pages if they ask."
+          ],
+          "documents": [
+            "account closure confirmations"
+          ],
+          "deadline": {
+            "type": "relative",
+            "anchor": "decree_date",
+            "days": 60,
+            "hard": false
+          },
           "professional": null,
           "source": null,
           "verified": false
@@ -392,9 +663,20 @@
           "title": "Auto, home, and renter insurance in your name",
           "category": "insurance",
           "why": "Policies in the other spouse's name can be cancelled without notice to you.",
-          "how": ["Buy auto insurance in your own name for vehicles you keep; update title and registration.", "Update homeowner or renter insurance to match who lives where.", "Update umbrella and valuables riders."],
-          "documents": ["policy declarations"],
-          "deadline": {"type": "relative", "anchor": "decree_date", "days": 30, "hard": false},
+          "how": [
+            "Buy auto insurance in your own name for vehicles you keep; update title and registration.",
+            "Update homeowner or renter insurance to match who lives where.",
+            "Update umbrella and valuables riders."
+          ],
+          "documents": [
+            "policy declarations"
+          ],
+          "deadline": {
+            "type": "relative",
+            "anchor": "decree_date",
+            "days": 30,
+            "hard": false
+          },
           "professional": null,
           "source": null,
           "verified": false
@@ -404,7 +686,11 @@
           "title": "Utilities, phone plan, subscriptions",
           "category": "money",
           "why": "Shared plans leak money and data.",
-          "how": ["Transfer or close utilities per the decree.", "Split the phone plan; port your number.", "Cancel or reassign streaming, cloud, and app subscriptions."],
+          "how": [
+            "Transfer or close utilities per the decree.",
+            "Split the phone plan; port your number.",
+            "Cancel or reassign streaming, cloud, and app subscriptions."
+          ],
           "documents": [],
           "deadline": null,
           "professional": null,
@@ -423,9 +709,22 @@
           "title": "Record the deed and remove the ex-spouse from the mortgage",
           "category": "housing",
           "why": "A deed changes ownership; it does not change who owes the mortgage. Property transfers between former spouses are non-taxable when 'incident to the divorce' (within 1 year, or related to the divorce within 6 years), and the recipient keeps the transferor's basis.",
-          "how": ["Have the deed prepared and recorded through a title company or attorney (some states restrict who may prepare deeds).", "Refinance or complete a loan assumption to take the ex-spouse off the mortgage as the decree requires.", "Log the transfer date against the 1-year and 6-year windows."],
-          "documents": ["recorded deed", "refinance or assumption approval"],
-          "deadline": {"type": "relative", "anchor": "decree_date", "days": 365, "hard": false, "note": "Section 1041 one-year presumption"},
+          "how": [
+            "Have the deed prepared and recorded through a title company or attorney (some states restrict who may prepare deeds).",
+            "Refinance or complete a loan assumption to take the ex-spouse off the mortgage as the decree requires.",
+            "Log the transfer date against the 1-year and 6-year windows."
+          ],
+          "documents": [
+            "recorded deed",
+            "refinance or assumption approval"
+          ],
+          "deadline": {
+            "type": "relative",
+            "anchor": "decree_date",
+            "days": 365,
+            "hard": false,
+            "note": "Section 1041 one-year presumption"
+          },
           "professional": "title company, attorney, lender",
           "source": "https://www.irs.gov/publications/p504",
           "verified": true
@@ -435,8 +734,14 @@
           "title": "Retirement money: distribution or rollover decision",
           "category": "retirement",
           "why": "Plan benefits paid to you under a QDRO are generally taxable income unless rolled over into an IRA or another plan. The app tracks the decision; a professional advises on it.",
-          "how": ["When the plan says the QDRO is qualified, request the distribution options in writing.", "Ask a tax professional or CDFA before choosing cash, rollover, or leaving the money in the plan.", "Record the choice and the completion date."],
-          "documents": ["plan distribution election"],
+          "how": [
+            "When the plan says the QDRO is qualified, request the distribution options in writing.",
+            "Ask a tax professional or CDFA before choosing cash, rollover, or leaving the money in the plan.",
+            "Record the choice and the completion date."
+          ],
+          "documents": [
+            "plan distribution election"
+          ],
           "deadline": null,
           "professional": "tax professional, CDFA",
           "source": "https://www.irs.gov/publications/p504",
@@ -447,9 +752,17 @@
           "title": "Pension survivor and payment elections",
           "category": "retirement",
           "why": "For defined benefit pensions the order may award a survivor annuity; elections are often irrevocable.",
-          "how": ["Ask the plan what elections the order gives you and when they must be made.", "Record election deadlines the plan sets."],
-          "documents": ["plan election forms"],
-          "deadline": {"type": "user-entered", "rule": "plan-set"},
+          "how": [
+            "Ask the plan what elections the order gives you and when they must be made.",
+            "Record election deadlines the plan sets."
+          ],
+          "documents": [
+            "plan election forms"
+          ],
+          "deadline": {
+            "type": "user-entered",
+            "rule": "plan-set"
+          },
           "professional": "attorney, QDRO specialist",
           "source": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/qdros-practical-guide",
           "verified": false
@@ -459,9 +772,20 @@
           "title": "Social Security divorced-spouse benefits file",
           "category": "benefits",
           "why": "If the marriage lasted 10+ years, you are unmarried, you are 62+, and your ex is entitled to benefits (or you have been divorced 2+ years and your ex is 62+), you may claim up to 50% of the ex's full benefit; it does not reduce theirs. Survivor benefits can start at 60. Remarriage can affect eligibility.",
-          "how": ["Store the marriage certificate and certified decree together.", "Record your ex-spouse's name, date of birth, and Social Security number if known.", "Set a reminder for age 62 to contact SSA about options; the app does not advise when to claim."],
-          "documents": ["marriage certificate", "certified decree"],
-          "deadline": {"type": "age", "anchor": "birth_date", "age_years": 62},
+          "how": [
+            "Store the marriage certificate and certified decree together.",
+            "Record your ex-spouse's name, date of birth, and Social Security number if known.",
+            "Set a reminder for age 62 to contact SSA about options; the app does not advise when to claim."
+          ],
+          "documents": [
+            "marriage certificate",
+            "certified decree"
+          ],
+          "deadline": {
+            "type": "age",
+            "anchor": "birth_date",
+            "age_years": 62
+          },
           "professional": null,
           "source": "https://www.ssa.gov/family/eligibility",
           "verified": true
@@ -471,9 +795,22 @@
           "title": "New will, powers of attorney, and health directive",
           "category": "estate",
           "why": "Many states revoke gifts to an ex-spouse in a will automatically, but not all documents, and never ERISA plans. Old powers of attorney can leave an ex-spouse in control.",
-          "how": ["Sign a new will or trust amendment.", "Sign new financial and healthcare powers of attorney and a healthcare directive.", "Update HIPAA releases and any trust beneficiary designations."],
-          "documents": ["will", "powers of attorney", "healthcare directive"],
-          "deadline": {"type": "relative", "anchor": "decree_date", "days": 90, "hard": false},
+          "how": [
+            "Sign a new will or trust amendment.",
+            "Sign new financial and healthcare powers of attorney and a healthcare directive.",
+            "Update HIPAA releases and any trust beneficiary designations."
+          ],
+          "documents": [
+            "will",
+            "powers of attorney",
+            "healthcare directive"
+          ],
+          "deadline": {
+            "type": "relative",
+            "anchor": "decree_date",
+            "days": 90,
+            "hard": false
+          },
           "professional": "estate attorney",
           "source": null,
           "verified": false
@@ -483,7 +820,9 @@
           "title": "Emergency contacts everywhere",
           "category": "identity",
           "why": "Employers, hospitals, and schools call whoever is on file.",
-          "how": ["Employer HR, doctors and hospital portals, schools, gym, building management, phone ICE contact."],
+          "how": [
+            "Employer HR, doctors and hospital portals, schools, gym, building management, phone ICE contact."
+          ],
           "documents": [],
           "deadline": null,
           "professional": null,
@@ -495,9 +834,21 @@
           "title": "First post-divorce tax return checklist",
           "category": "tax",
           "why": "Filing status follows December 31 marital status; alimony under post-2018 instruments is neither deductible nor taxable; property received keeps the giver's basis; dependents follow the custodial-parent rules and Form 8332.",
-          "how": ["Gather the decree, Form 8332 if applicable, QDRO and IRA transfer records, and closing statements for any property transfer.", "Confirm your name at SSA matches the return.", "Give the packet to a tax professional."],
-          "documents": ["decree", "Form 8332", "QDRO records", "property transfer records"],
-          "deadline": {"type": "fixed", "rule": "April 15 following the decree year"},
+          "how": [
+            "Gather the decree, Form 8332 if applicable, QDRO and IRA transfer records, and closing statements for any property transfer.",
+            "Confirm your name at SSA matches the return.",
+            "Give the packet to a tax professional."
+          ],
+          "documents": [
+            "decree",
+            "Form 8332",
+            "QDRO records",
+            "property transfer records"
+          ],
+          "deadline": {
+            "type": "fixed",
+            "rule": "April 15 following the decree year"
+          },
           "professional": "tax professional",
           "source": "https://www.irs.gov/publications/p504",
           "verified": true
@@ -507,8 +858,14 @@
           "title": "Support payment records",
           "category": "money",
           "why": "Disputes turn on records.",
-          "how": ["Log every payment received or made with date, amount, and method.", "Use automatic transfers or the state disbursement unit if ordered.", "Store the support order pages."],
-          "documents": ["support order"],
+          "how": [
+            "Log every payment received or made with date, amount, and method.",
+            "Use automatic transfers or the state disbursement unit if ordered.",
+            "Store the support order pages."
+          ],
+          "documents": [
+            "support order"
+          ],
           "deadline": null,
           "professional": null,
           "source": null,
@@ -519,9 +876,20 @@
           "title": "Rebuild individual credit",
           "category": "credit",
           "why": "Credit in your own name affects housing, insurance pricing, and refinancing.",
-          "how": ["Open or keep one card in your name only and pay in full.", "Re-pull the three reports 90 days after account separation; dispute errors.", "Consider a credit freeze if your ex knows your identifiers."],
-          "documents": ["credit reports"],
-          "deadline": {"type": "relative", "anchor": "decree_date", "days": 90, "hard": false},
+          "how": [
+            "Open or keep one card in your name only and pay in full.",
+            "Re-pull the three reports 90 days after account separation; dispute errors.",
+            "Consider a credit freeze if your ex knows your identifiers."
+          ],
+          "documents": [
+            "credit reports"
+          ],
+          "deadline": {
+            "type": "relative",
+            "anchor": "decree_date",
+            "days": 90,
+            "hard": false
+          },
           "professional": null,
           "source": "https://www.annualcreditreport.com",
           "verified": false
@@ -531,9 +899,18 @@
           "title": "Post-decree budget snapshot",
           "category": "money",
           "why": "Actual support, new premiums, and one household's costs replace the estimate.",
-          "how": ["Rebuild the monthly budget with real numbers from the first 60 days.", "Compare with the pre-filing snapshot.", "Export for a CDFA or financial planner if you use one."],
+          "how": [
+            "Rebuild the monthly budget with real numbers from the first 60 days.",
+            "Compare with the pre-filing snapshot.",
+            "Export for a CDFA or financial planner if you use one."
+          ],
           "documents": [],
-          "deadline": {"type": "relative", "anchor": "decree_date", "days": 90, "hard": false},
+          "deadline": {
+            "type": "relative",
+            "anchor": "decree_date",
+            "days": 90,
+            "hard": false
+          },
           "professional": "CDFA",
           "source": null,
           "verified": false
@@ -543,8 +920,14 @@
           "title": "Health care continuity",
           "category": "health",
           "why": "A new plan may mean new networks.",
-          "how": ["Confirm doctors and prescriptions are covered under the new plan.", "Transfer prescriptions and records if needed.", "Record the new plan's open enrollment dates."],
-          "documents": ["new insurance card"],
+          "how": [
+            "Confirm doctors and prescriptions are covered under the new plan.",
+            "Transfer prescriptions and records if needed.",
+            "Record the new plan's open enrollment dates."
+          ],
+          "documents": [
+            "new insurance card"
+          ],
           "deadline": null,
           "professional": null,
           "source": null,
@@ -555,8 +938,15 @@
           "title": "Military and federal pension branches",
           "category": "retirement",
           "why": "Military retired pay and federal civilian pensions follow their own division rules and forms, not a standard QDRO.",
-          "how": ["Military: ask the attorney about the USFSPA rules and the 10/10 rule for direct payment from DFAS.", "Federal civilian (FERS/CSRS): a court order acceptable for processing goes to OPM.", "Record the order type and where it was sent."],
-          "documents": ["court order", "agency acknowledgment"],
+          "how": [
+            "Military: ask the attorney about the USFSPA rules and the 10/10 rule for direct payment from DFAS.",
+            "Federal civilian (FERS/CSRS): a court order acceptable for processing goes to OPM.",
+            "Record the order type and where it was sent."
+          ],
+          "documents": [
+            "court order",
+            "agency acknowledgment"
+          ],
           "deadline": null,
           "professional": "attorney",
           "source": null,
@@ -567,9 +957,15 @@
           "title": "Annual review",
           "category": "estate",
           "why": "Beneficiaries, insurance, and estate documents drift.",
-          "how": ["Once a year: beneficiaries, insurance limits, estate documents, credit reports, Social Security statement."],
+          "how": [
+            "Once a year: beneficiaries, insurance limits, estate documents, credit reports, Social Security statement."
+          ],
           "documents": [],
-          "deadline": {"type": "recurring", "every_days": 365, "anchor": "decree_date"},
+          "deadline": {
+            "type": "recurring",
+            "every_days": 365,
+            "anchor": "decree_date"
+          },
           "professional": null,
           "source": null,
           "verified": false

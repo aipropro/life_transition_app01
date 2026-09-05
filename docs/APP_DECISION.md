@@ -38,7 +38,7 @@ Include:
 - Checklists: accounts, housing, insurance, tax documents, passwords, emergency contacts, beneficiaries.
 - QDRO and retirement task tracker (status only, no advice).
 - Export: professional meeting packet (PDF) for a lawyer or Certified Divorce Financial Analyst.
-- Paywall: one-time 90-day access, A/B $99 vs $149. Expert sessions sold separately later.
+- Paywall: one-time Reset Pass, A/B $99 vs $149, covering the 90-day program plus 12 months of vault, calendar and reminders. Optional renewal after month 12 at about $39.99 a year for the vault and long-dated reminders. Expert sessions sold separately. No document-generation add-ons (unauthorized-practice risk).
 
 Exclude (report's explicit list): co-parenting messaging or evidence logs, therapy or crisis AI, dating, fitness, beauty or community, automated legal or investment advice.
 
@@ -79,6 +79,8 @@ Two deep-research passes were run after this decision. Results:
 
 Launch sequence: US, then UK/Canada/Australia on the same engine, then Japan (new language, content and payment stack), then Germany and the rest of the EU on one compliance build.
 
-Still open: keyword volumes for the post-decree terms, the women-50+ creator and Facebook-group map, employer EAP and relocation partners, and confirmation that the "Anchor" competitor exists as described.
+External runs merged on 6 September 2026: the C1 audit (corrections applied), the P1 and P3 channel maps (`docs/research/channels-english-markets.md`, `docs/research/channels-japan.md`), the P2 competitor check (Anchor exists, 3 ratings; no one-time-purchase, beneficiary or QDRO tracker in any competitor), the G9 country counts, and the G1 England and Wales pack (`content/checklists/uk-england-wales-post-decree.json`, pending audit).
+
+Still open: keyword volumes, employer EAP and relocation partners, the C2 audit of the UK pack, and the G2-G8 packs for Canada, Australia, Japan, Germany, France, Spain and Brazil.
 
 Assumptions: consumer-direct launch, no clinical or institutional partners yet, US market first, web-first before app stores.
